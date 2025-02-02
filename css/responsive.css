@@ -1,0 +1,114 @@
+@media screen and (min-width: 768px) {
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 40px;
+    max-width: 1080px;
+  }
+
+  .header {
+    padding: 16px;
+  }
+
+  .header-nav-list {
+    gap: 40px;
+    margin-top: 5px;
+  }
+
+  .header-nav-link {
+    transition: opacity .3s;
+  }
+
+  .header-nav-link:hover {
+    opacity: 0.7;
+  }
+
+  #about {
+    padding: 100px 40px;
+  }
+
+  .section-title {
+    font-size: 64px;
+  }
+
+  .about-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .about-img {
+    width: 300px;
+  }
+
+  .about-text-container {
+    max-width: 660px;
+    margin-top: 0;
+  }
+
+  .about-text {
+    font-size: 15px;
+  }
+
+  .about-text + .about-text {
+    margin-top: 30px;
+  }
+
+  #menu {
+    padding: 0 40px 100px 40px;
+  }
+
+  .menu-list {
+    display: flex;
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+
+  #shop {
+    background-image: url(../img/bg-shop.png);
+    padding: 60px 0;
+  }
+
+  .shop-input-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+
+  .shop-input-label {
+    margin: 0;
+    width: 100%;
+  }
+
+  .shop-form-input-button {
+    margin: 40px 0 0 0;
+    transition: opacity .3s;
+  }
+
+  .shop-form-input-button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
+  .footer-text {
+    margin-top: 12px;
+  }
+
+  .sns-list {
+    gap: 40px;
+  }
+
+  #copyright-text {
+    font-size: 13px;
+  }
+}
+
+
+

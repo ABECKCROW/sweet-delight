@@ -17,20 +17,29 @@
           href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Noto+Sans+JP:wght@100..900&display=swap"
           rel="stylesheet" />
   <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
 </head>
 
 <body>
 <header class="header">
-  <h1 class="header-logo">
-    <img src="./img/logo.svg" alt="Sweet delight" />
-  </h1>
-  <nav class="header-nav">
-    <ul class="header-nav-list">
-      <li class="header-nav-item"><a href="#about">About</a></li>
-      <li class="header-nav-item"><a href="#menu">Menu</a></li>
-      <li class="header-nav-item"><a href="#shop">Shop</a></li>
-    </ul>
-  </nav>
+  <div class="header-container">
+    <h1 class="header-logo">
+      <img src="./img/logo.svg" alt="Sweet delight" />
+    </h1>
+    <nav class="header-nav">
+      <ul class="header-nav-list">
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="#about">About</a>
+        </li>
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="#menu">Menu</a>
+        </li>
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="#shop">Shop</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>
 <main>
   <div class="main-visual">
@@ -40,65 +49,74 @@
     </picture>
   </div>
   <!-- About -->
-  <section>
+  <section id="about">
     <h2 class="section-title">About</h2>
-    <p class="section-title-text">ー　当店について　ー</p>
-    <img class="about-img" src="./img/about.png" alt="当店について" />
-    <div class="about-text-container">
+    <p class="section-title-text">ー 当店について ー</p>
+    <div class="about-container">
+      <img class="about-img" src="./img/about.png" alt="当店について" />
+      <div class="about-text-container">
       <p class="about-text">
         当店では、素材の持つ美味しさや風味を最大限に生かし、シンプルでありながらも、素材の良さを引き出すこだわりのスイーツを提供しています。
       </p>
-      <br />
       <p class="about-text">
         自然な味わいを大切にし、素材を感じさせるスイーツで、心に残るひとときをお過ごしください。
       </p>
+    </div>
     </div>
   </section>
   <!-- Manu -->
   <section id="menu">
     <h2 class="section-title">Menu</h2>
-    <p class="section-title-text">ー　今月のケーキ　ー</p>
-    <ul>
-      <li class="menu-list">
-        <img class="menu-img" src="./img/menu1.png" alt="" />
-        <div class="menu-text-container">
-          <p class="menu-text">ストロベリーケーキ</p>
-          <small class="menu-text-small">- Strawberry Cake -</small>
-          <p class="menu-text-hash"># 旬のあまおうトッピング</p>
+    <p class="section-title-text">ー 今月のケーキ ー</p>
+    <ul class="menu-list">
+      <li class="menu-list-item">
+        <div class="menu-list-item-wrap">
+          <img class="menu-img" src="./img/menu1.png" alt="" />
+          <div class="menu-text-box">
+            <p class="menu-text">ストロベリーケーキ</p>
+            <small class="menu-text-small">- Strawberry cake -</small>
+            <p class="menu-text-hash"># 旬のあまおうトッピング</p>
+          </div>
         </div>
       </li>
       <li class="menu-list">
-        <img class="menu-img" src="./img/menu2.png" alt="" />
-        <div class="menu-text-container">
-          <p class="menu-text">ブルーベリーチーズケーキ</p>
-          <small class="menu-text-small">- Blueberry cheesecake -</small>
-          <p class="menu-text-hash"># フランス産チーズをブレンド</p>
+        <div class="menu-list-item-wrap">
+          <img class="menu-img" src="./img/menu2.png" alt="" />
+          <div class="menu-text-box">
+            <p class="menu-text">ブルーベリーチーズケーキ</p>
+            <small class="menu-text-small">- Blueberry cheesecake -</small>
+            <p class="menu-text-hash"># フランス産チーズをブレンド</p>
+          </div>
         </div>
       </li>
       <li class="menu-list">
-        <img class="menu-img" src="./img/menu3.png" alt="" />
-        <div class="menu-text-container">
-          <p class="menu-text">チョコレートケーキ</p>
-          <small class="menu-text-small">- Chocolate cake -</small>
-          <p class="menu-text-hash"># ベルギー産チョコレート使用</p>
+        <div class="menu-list-item-wrap">
+          <img class="menu-img" src="./img/menu3.png" alt="" />
+          <div class="menu-text-box">
+            <p class="menu-text">チョコレートケーキ</p>
+            <small class="menu-text-small">- Chocolate cake -</small>
+            <p class="menu-text-hash"># ベルギー産チョコレート使用</p>
+          </div>
         </div>
       </li>
     </ul>
   </section>
   <!-- Shop -->
-  <section class="full-section">
-    <div class="shop">
+  <section id="shop">
+    <div class="shop-container">
       <h2 class="section-title">Shop</h2>
-      <p class="section-title-text">ー　ショップ情報　ー</p>
-      <p class="about-text">
+      <p class="section-title-text">ー ショップ情報 ー</p>
+      <p class="shop-text">
         ただいま、オンラインストアを準備中です。<br>
         最新情報は以下より送信いただいた<br>
         メールアドレスへご案内いたします。
       </p>
-      <label>
-        <input class="form-input" type="text" placeholder="sample@example.com" />
-      </label>
-      <button class="button" type="submit">SEND</button>
+      <div class="shop-input-wrap">
+        <label class="shop-input-label">
+          <input class="shop-form-input" type="text" placeholder="sample@sample.com" />
+        </label>
+        <button class="shop-form-input-button" type="submit">SEND</button>
+      </div>
     </div>
   </section>
   <!-- SNS -->
@@ -106,12 +124,12 @@
     <h2 class="footer-logo">
       <img src="./img/logo.svg" alt="Sweet Delight" />
     </h2>
-    <p class="footer-text">ー　各SNS更新中　ー</p>
-    <ul class="sns-wrapper">
+    <p class="footer-text">ー 各SNS更新中 ー</p>
+    <ul class="sns-list">
       <li class="sns-item">
         <a>
           <img src="./img/icon-instagram.png" alt="SNS" />
-          <p class="sns-text">メニューのご案内</p>
+          <p class="sns-text">メニューご案内</p>
         </a>
       </li>
       <li class="sns-item">
