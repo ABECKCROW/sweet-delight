@@ -39,7 +39,6 @@ section {
   position: relative;
 }
 
-/* ナビゲーション項目の下線は削除 */
 .header-nav-item a::after {
   content: none;
 }
@@ -92,7 +91,7 @@ section {
   padding: 80px 40px;
 }
 
-.menu-list-item+.menu-list-item {
+.menu-list+.menu-list {
   margin-top: 62px;
 }
 
